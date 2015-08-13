@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-easy_install http://github.com/j-bennet/wharfee/tarball/master
+if [ "$SKIP_INSTALL" != "Y" ]; then
+    easy_install http://github.com/j-bennet/wharfee/tarball/master
+fi
 
 echo "All done!"
 
